@@ -1,0 +1,152 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Brand Bar styles */
+.brand-bar {
+    background-color: #8C1515;
+    color: #FFF;
+    padding: 16px 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; /* Ensures the brand bar is above other content */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.brand-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.brand-links ul li {
+    margin-left: 20px;
+}
+
+.brand-links ul li:first-child {
+    margin-left: 0;
+}
+
+.brand-links a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    background: #fff;
+    color: #fff3f3;
+    padding: 10px 0;
+    position: relative;
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+#logo-img {
+    height: 60px;
+}
+
+.nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.nav-links ul {
+    list-style: none;
+    padding: 0;
+}
+
+.nav-links ul li {
+    margin: 10px 0;
+}
+
+.nav-links ul li a {
+    color: #fff3f3;
+    text-decoration: none;
+}
+
+.icon {
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff3f3;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+}
+
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-col {
+    flex: 1;
+    padding: 20px;
+    min-width: 300px;
+    text-align: center;
+}
+
+.about-col h1 {
+    padding-top: 0;
+    margin-bottom: 20px;
+}
+
+.about-col p {
+    margin-bottom: 20px;
+}
+
+.about-col img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Button Styles */
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff3f3;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+    .nav-links {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .nav-links ul {

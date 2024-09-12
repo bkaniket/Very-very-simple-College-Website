@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - GGU</title>
+    <link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="css/contact_style.css">
+</head>
+<body>
+    <!-- Brand Bar -->
+    <div class="brand-bar">
+        <div class="container">
+            <div class="brand-logo">
+                <h1>Shreeyash Pratishthan</h1>
+            </div>
+            <div class="brand-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <section class="header">
+        <div class="container">
+            <div class="r_form_wrap">
+                <div class="title"><br>
+                    <h2>Electronic & Telecomm Engineering</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Course Information Section -->
+    <section class="course-info">
+        <div class="container">
+            <div class="course-details">
+                <div class="course-description">
+                    <br><h3>Course Overview</h3>
+                    <p>Electronic & Telecommunication Engineering is a field of engineering that focuses on designing, testing, and supervising the manufacture of electronic and telecommunication equipment. It covers a wide range of technologies, including digital electronics, analog electronics, signal processing, telecommunications systems, and more.</p>
+                    <br><br>
+                    <h3>Skills Developed</h3>
+                    <ul>
+                        <li>Proficiency in electronic circuit design</li>
+                        <li>Knowledge of communication systems</li>
+                        <li>Problem-solving abilities</li>
+                        <li>Understanding of signal processing techniques</li>
+                        <li>Project management skills</li>
+                    </ul>
+                    <br><br>
+                    <h3>Career Opportunities</h3>
+                    <p>Graduates of Electronic & Telecommunication Engineering can pursue careers in various industries, including telecommunications, electronics manufacturing, information technology, aerospace, defense, and more. Job roles may include Electronics Engineer, Telecommunication Engineer, Network Engineer, Systems Engineer, and Research Scientist.</p>
+                </div>
+                <br>
+                <div class="course-image">
+                    <img src="image/electrical.jpg" alt="Electronic & Telecomm Engineering">
+                </div>
+            </div>
+        </div>
+    </section>
+    <br><br>
+    <!-- Vision & Mission Section -->
+    <section class="vision-mission">
+        <div class="container">
+            <div class="vision"><br><br>
+                <h3>Vision of Electronic and Telecommunication</h3>
+                <p>An Institute striving for excellence in providing transformative education and enhancing multidisciplinary skills for developing Intellectual, Innovative and Quality Technician/Engineer/ Entrepreneur which will benefit the Society and the Industrial challenges.</p>
+            </div>
+            <br><br>
+            <div class="mission">
+                <h3>Mission</h3>
+                <p>To be a Technical Educational Institute in transforming aspiring Technicians/Engineers through rigorous coursework and Technical skills, by providing understanding of the needs of Society and Industry.</p>
+                <ul>
+                    <li>M1. To benchmark with the best global standards of Quality Education.</li>
+                    <li>M2. To enhance the commitment of faculty staff and Students by inculcating the spirit of teamwork, innovation, and professionalism.</li>
+                    <li>M3. Establish a centre of excellence to enhance Academia-Industry partnership work on collaborative projects and encourage students to develop micro projects and patents.</li>
+                    <li>M4. To develop globally competent students by enhancing indigenous technologies and inculcating entrepreneurship quality in them.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!-- Let's get in touch element -->
+    <div class="get-in-touch">
+        <p>Only 2 Seats vaccant </p>
+    </div>
+</body>
+</html>
+
+<!-- Script for scroll effect -->
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // Intersection Observer for course items
+        const courseItems = document.querySelectorAll('.course-col');
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, {
+            threshold: 0.1
+        });
+
+        courseItems.forEach(item => {
+            observer.observe(item);
+        });
+
+        // Scroll effect for "Let's get in touch" element
+        const getInTouch = document.querySelector('.get-in-touch');
+
+        window.addEventListener('scroll', function() {
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > 200) { // Adjust this value to control when the effect starts
+                getInTouch.style.display = 'block';
+            } else {
+                getInTouch.style.display = 'none';
+            }
+        });
+    });
+</script>

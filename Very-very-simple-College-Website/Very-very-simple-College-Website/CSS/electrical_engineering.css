@@ -1,0 +1,169 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.brand-bar {
+    background-color: #8C1515;
+    color: #FFF;
+    padding: 16px 0;
+}
+
+.brand-bar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-logo h1 {
+    font-size: 26px;
+    margin: 0;
+}
+
+.brand-links ul {
+    list-style-type: none;
+    display: flex;
+}
+
+.brand-links ul li {
+    margin-left: 20px;
+}
+
+.brand-links ul li:first-child {
+    margin-left: 0;
+}
+
+.brand-links a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+/* Header Section */
+.header {
+    background: #fff;
+    color: #333;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.header .title h2 {
+    font-size: 36px;
+}
+
+/* Course Information Section */
+.course-info {
+    padding: 50px 0;
+    background-color: #FFF;
+}
+
+.course-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.course-details .course-description {
+    flex: 1;
+    padding-right: 10px;
+}
+
+.course-details .course-description h3 {
+    margin-bottom: 10px;
+}
+
+.course-details .course-description p {
+    margin-bottom: 20px;
+}
+
+.course-details .course-description ul {
+    margin-bottom: 20px;
+    padding-left: 20px;
+}
+
+.course-details .course-description ul li {
+    margin-bottom: 10px;
+}
+
+.course-details .course-description ul li:last-child {
+    margin-bottom: 0;
+}
+
+.course-details .course-image img {
+    max-width: auto;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Vision & Mission Section */
+.vision-mission {
+    padding: 500px 0;
+    background-color: #f9f9f9;
+}
+
+.vision-mission .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vision-mission .vision,
+.vision-mission .mission {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.vision-mission h3 {
+    margin-bottom: 20px;
+}
+
+.vision-mission p {
+    margin-bottom: 20px;
+}
+
+.vision-mission ul {
+    padding-left: 20px;
+}
+
+.vision-mission ul li {
+    margin-bottom: 10px;
+}
+
+.vision-mission ul li:last-child {
+    margin-bottom: 0;
+}
+
+/* Let's get in touch animated effect */
+@keyframes slideIn {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+ }
+ 
+ .get-in-touch {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #0465b1;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 5px 5px 0;
+    animation: slideIn 1s forwards;
+    display: none; /* Hidden by default */
+ }

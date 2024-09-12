@@ -1,0 +1,155 @@
+<!-- Contact_page.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Contact Us - GGU</title>
+	<link rel="shortcut icon" href="image/favicon.ico" type="image/svg+xml">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+	<link rel="stylesheet" href="css/contact_style.css">
+</head>
+<body>
+	<!-- Brand Bar -->
+	<div class="brand-bar">
+		<div class="container">
+			<div class="brand-logo">
+				<h1>Shreeyash Pratishthan</h1>
+			</div>
+			<div class="brand-links">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- Header -->
+
+	<section class="header">
+	   
+		<div class="wrapper">
+			<div class="r_form_wrap">
+				<div class="title">
+					<p>Contact form</p>
+				</div>
+				<!-- Contact Form 
+				<div class="r_form">
+					<form method="post" onsubmit="sendmail(); reset(); return false;">
+						<div class="input_wrap">
+							<label for="yourname">  Your Name</label>
+							<div class="input_item">
+								<i class="fa fa-user" id="icon"></i>
+								<input type="text" name="your name" class="input" id="yourname" placeholder="Enter your name" required>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="emailaddress">Email Address</label>
+							<div class="input_item">
+								<i class="fa fa-envelope" id="icon"></i>
+								<input type="email" name="email address" class="input" id="emailaddress" placeholder="Enter your email" required>
+							</div>
+						</div>
+						<div class="input_wrap">
+							<label for="message">Message</label>
+							<div class="input_item">
+								<i class="fa fa-commenting" id="icon"></i>
+								<textarea name="message" class="mess" id="message" placeholder="Write your message..." required></textarea>
+							</div>
+						</div>
+						<input type="submit" class="button" value="Send Message">
+						<input type="reset" class="clear_ad" value="Clear">
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>-->
+
+<!-- Contact Information -->
+
+
+<section class="location"></section>
+<br><br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3753.518172488047!2d75.32800047348574!3d19.818016281545376!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb98ad174f013d%3A0x6f6908b53576bc04!2sShreeyash%20College%20Of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1716310610660!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<section class="contact-us">
+	<div class="row">
+		<div class="contact-col">
+
+		</div>
+	
+	</div>
+	<div class="contact-col"></div>
+</section>
+
+<section class="contact-info">
+   <div class="container">
+	
+	   <h2>Contact Us</h2>
+	   <p>General Contact Information</p>
+	   <div class="contact-details">
+		   <div class="info-box">
+			<i class="fa fa-phone"></i><h3>Telephone</h3>
+			   
+			   <p>Shreeyash Polytechnic – 0240-6608704/750/770</p>
+			   <p>Shreeyash College of Engineering & Technology – 0240-6608701/702/703/713</p>
+			   <p>Shreeyash Institute of Management – (0240) 6608707/708/778/779</p>
+		   </div>
+		   <div class="info-box">
+			<i class="fa fa-envelope"></i>
+			   <h3>Email</h3>
+			   <p>1092principal@msbte.com</p>
+		   </div>
+		   <div class="info-box"><br>
+			   <h3>Web</h3>
+			   <p>www.sypoly.org</p>
+		   </div>
+		   <div class="info-box">
+			<i class="fa fa-home"></i>
+			   <h3>Primary Address</h3>
+			   <p>Shreeyash Pratishthan,</p>
+			   <p>Shreeyash Polytechnic,</p>
+			   <p>Gut no.258(P), Satara tanda, P.O. Box No. 586,</p>
+			   <p>& Dist Aurangabad.</p>
+			   <p>Pin – 431010</p>
+		   </div>
+	   </div>
+	   <p><strong>How can we help?</strong></p>
+	   <p><strong>
+		Let’s get in touch!!
+	</strong></p>
+	   <p>	
+		8067205750,8067205750</p>
+		<p>1092principal@msbte.com</p>
+	   <p>Please note: University departments/offices have unique mailing addresses and phone numbers. Please consult the campus directory or departmental websites.</p>
+   </div>
+</section>
+
+
+	<!-- Script for sending email -->
+	<script src="https://smtpjs.com/v3/smtp.js"></script>
+	<script>
+		function sendmail() {
+			Email.send({}).then(
+				message => alert("Your Message Is Successful - Team Shreeyash Pratishthan")
+			);
+		}
+	</script>
+
+	<!-- Script for mobile navigation -->
+	<script>
+		var navLinks = document.getElementById("navLinks");
+
+		function showmenu() {
+			navLinks.style.right = "0";
+		}
+
+		function hidemenu() {
+			navLinks.style.right = "-200px";
+		}
+	</script>
+</body>
+</html>
